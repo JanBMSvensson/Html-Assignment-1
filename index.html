@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" />
+        <title>HTML Assignment 1</title>
+    </head>
+    <body>
+        <div cclass="page-with-sidebar" Cstyle="grid-template-rows: auto auto auto; display:grid;">
+            <header class="navBar">
+                <h1>Site name</h1>
+
+                <nav class="navMenu">
+                    <ul class="menuItems" style="grid-template-columns: auto auto auto;">
+                        <li><a href="https://www.w3schools.com/">Menu item 1</a></li>
+                        <li><a href="https://sv.lipsum.com/">Menu item 2</a></li>
+                        <li><a href="https://unsplash.com/">Menu item 3</a></li>
+                    </ul>
+                </nav>
+
+                <!--div style="grid-area: empty; "></div-->
+
+                <div class="user" onclick="this.children[0].click();">
+                    <a href="login.html">Login</a>
+                </div>
+            </header>
+
+            <div style="grid-template-columns: auto auto; display:grid;">
+
+                <div class="body" style="display: grid; grid-template-areas: 'H .' 'A0 A0' 'A1 A2';grid-gap:20px;">
+                    <h2 class="title" style="grid-area: H;">Lorem Ipsum</h2>
+                    
+                    <article class="textblock-container" style="grid-area: A0;">
+                        <p class="textblock">
+                            Donec convallis commodo mauris, nec vulputate magna porttitor ut. Quisque dignissim sodales nibh sit amet placerat. Vestibulum dapibus velit in nisi imperdiet, et interdum nibh pretium. Integer in leo mi. Cras rhoncus, justo id convallis sagittis, lorem odio bibendum neque, quis iaculis ipsum neque sit amet justo. Aenean efficitur euismod erat, sed dignissim mauris auctor sit amet. Sed id pharetra metus.
+                        </p>
+                    </article>
+    
+                    <article class="textblock-container" style="grid-area: A1;">
+                        <p class="textblock">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non erat id enim viverra porttitor non sed felis. Duis pulvinar, elit vulputate sodales tincidunt, eros ante viverra nisl, nec dignissim dui lacus vitae diam. Curabitur eget urna vel velit egestas egestas. Vestibulum iaculis turpis viverra, accumsan tellus eu, vulputate tellus. In lobortis nisl id suscipit mattis. Sed ultrices arcu a ex maximus, vitae sagittis nisi placerat. Nullam ut vulputate enim. Quisque ut dignissim felis. Vestibulum a tellus velit. Quisque blandit mattis magna ultrices consequat. Duis iaculis ac nunc vel commodo. Nam venenatis nisl eu lacus consectetur luctus.
+                        </p>
+                        <p class="textblock">
+                            <img class="imgCow" src="cow.png" />
+                            Pellentesque rhoncus felis ac faucibus varius. In viverra lorem in risus pellentesque, at mollis velit consequat. Proin blandit posuere mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque cursus rhoncus magna, sit amet tempor urna feugiat facilisis. Mauris accumsan nulla orci, nec semper elit pretium in. Cras et dignissim massa. Vivamus blandit urna eu quam vestibulum vehicula. Suspendisse venenatis ante in sollicitudin commodo. Maecenas ut elit neque. Pellentesque efficitur purus nec ligula pharetra, et tincidunt sem tempor. Proin ut arcu vel tortor facilisis finibus. Vestibulum laoreet laoreet nulla ut luctus. Donec accumsan tincidunt tortor, in mollis magna ullamcorper sit amet.
+                        </p>
+                    </article>
+                    
+                    <article class="textblock-container" style="grid-area: A2;">
+                        <p class="textblock">Aenean aliquam, urna at aliquet mattis, mauris purus luctus lacus, at pulvinar ipsum dolor nec neque. In venenatis varius sapien. Aliquam eu elit ut ipsum luctus volutpat. Duis facilisis urna sit amet augue hendrerit, ac fringilla nulla vestibulum. Proin auctor ultricies massa, ut malesuada nisi rutrum eget. Mauris et augue ex. Etiam molestie no.</p>
+                        <p class="textblock">Donec vulputate tincidunt odio, tempor tempus tellus cursus vel. Vestibulum sit amet placerat risus. Nam sed pharetra dolor, quis auctor libero. In ullamcorper, est eget ultrices efficitur, quam elit rutrum arcu, sit amet vulputate ex dui nec turpis. Morbi porttitor diam elit, sed efficitur diam consequat semper. Nullam iaculis augue eu tortor tincidunt, non ultrices dolor ultrices. Praesent facilisis odio vel odio blandit, non luctus ligula accumsan. Vivamus eget orci eros.</p>
+                    </article>
+                </div>
+    
+                <aside class="sidebar">
+                    <h2>Muspi Merol</h2>
+                    <ul>
+                        <li>Nation 1
+                            <ol>
+                                <li>Big City 1</li>
+                                <li>Small City 1</li>
+                                <li>Mega City 1</li>
+                            </ol>
+                        </li>
+                        <li>Nation 2
+                            <ol>
+                                <li>Big City 2</li>
+                                <li>Small City 2</li>
+                                <li>Mega City 2</li>
+                            </ol>
+                        </li>
+                        <li>Nation 3
+                            <ol>
+                                <li>Big City 3</li>
+                                <li>Small City 3</li>
+                                <li>Mega City 3</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </aside>
+
+            </div>
+            <footer>&copy; 2022</footer>
+        </div>
+    </body>
+</html>

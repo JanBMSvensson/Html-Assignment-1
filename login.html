@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" />
+        <title>HTML Assignment 1</title>
+    </head>
+    <body>
+        <div class="">
+            <header class="navBar">
+                <h1>Site name</h1>
+                <nav class="navMenu">
+                    <ul class="menuItems" style="grid-template-columns: auto auto auto;">
+                        <li><a href="https://www.w3schools.com/">Menu item 1</a></li>
+                        <li><a href="https://sv.lipsum.com/">Menu item 2</a></li>
+                        <li><a href="https://unsplash.com/">Menu item 3</a></li>
+                    </ul>
+                </nav>
+                <div class="user" onclick="this.children[0].click();">
+                    <a href="index.html">Index</a>
+                </div>
+            </header>
+            <div class="body" style="display: grid; grid-template-areas: '. x . .''. y y .';">
+                    <h2 class="title" style="grid-area: x;" >Login</h2>
+                    <div class="formblock" style="grid-area: y; ">
+                        <form method="post" action="index.html">
+                            <div>User name</div> 
+                            <input type="text" size="50" style="width: 100%;" />
+                            <div style="margin-top: 10px;">Password</div>
+                            <input type="password" size="50" style="width: 100%;" />
+                            <input type="submit" value="Login" style="margin-top: 10px;" />
+                        </form>
+                    </div>
+                
+            </div>
+            <footer>
+                &copy; 2022
+            </footer>
+        </div>
+    </body>
+</html>

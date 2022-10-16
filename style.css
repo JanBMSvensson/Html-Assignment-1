@@ -1,0 +1,145 @@
+
+:root {
+    --header-bg-color: #E897F6;
+    --header-menu-bg-color: #E2CFE5;
+    --header-user-bg-color: #828282;
+
+    --main-bg-color: #A6A6A6;
+    --main-text-bg-color: #DDDDDD;
+
+    --sidebar-bg-color: #A6C5E4;
+    --sidebar-text-bg-color: #E6EDF7;
+
+    --footer-bg-color: #9F8FB6;
+
+    --text-fg-color: black;
+    --text-inverted-fg-color: white;
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+.navBar {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 'appTitle nav-menu empty login';
+    text-align: left;
+    background-color: var(--header-bg-color);
+}
+
+.navBar h1 {
+    grid-area: appTitle; 
+    text-align: center;
+}
+
+.navBar a {
+    color: var(--text-fg-color);
+    text-decoration: none;
+}
+
+.navBar .user {
+    grid-area:login; 
+    display:grid; 
+    text-align: center; 
+    height: 100%; 
+    align-items: center; 
+    cursor: pointer; 
+    background-color: var(--header-user-bg-color);
+}
+
+.navBar .navMenu {
+    grid-area:nav-menu;
+    background-color: var(--header-menu-bg-color); 
+    cursor:pointer;
+}
+
+.navBar .navMenu .menuItems {
+    list-style-type: none;
+    align-items: center; 
+    height: 100%; 
+    padding-left: 0px; 
+    margin-top: 0px; 
+    text-align: center; 
+    display: grid; 
+}
+
+.navBar .user a {
+    color: var(--text-inverted-fg-color);
+}
+
+
+
+.body {
+    background-color: var(--main-bg-color); 
+    padding: 20px;
+}
+.body .title {
+    background-color: var(--main-text-bg-color);
+    text-align: center; 
+    padding: 10px; 
+    margin: 0px;
+}
+
+.formblock {
+    background-color: var(--main-text-bg-color);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+.textblock-container {
+    background-color: var(--main-text-bg-color);
+    margin: 0px;
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.textblock {
+    text-align:justify;
+}
+
+.imgCow {
+    width: 75px;
+    float:left; 
+    margin-right: 10px; 
+    margin-top: 5px;
+}
+
+
+
+.sidebar {
+    background-color: var(--sidebar-bg-color);
+}
+
+.sidebar h2 {
+    background-color: var(--sidebar-text-bg-color); 
+    margin:20px; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.sidebar ul {
+    background-color: var(--sidebar-text-bg-color); 
+    margin:20px; 
+    padding: 15px; 
+    padding-left: 30px;
+}
+
+.sidebar ol {
+    margin-top:2px;
+    margin-bottom: 10px;
+    padding-left: 18px;
+}
+
+
+footer {
+    margin: 0px;
+    background-color: var(--footer-bg-color);
+    padding: 10px;
+    text-align: center;
+}
